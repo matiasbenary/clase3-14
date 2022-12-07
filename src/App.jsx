@@ -2,7 +2,36 @@ import Button from "./components/Button";
 import Card from "./components/Card";
 
 const App = () => {
-  // const productos = [{}];
+  const products = [
+    {
+      title: "Escritorio de madera",
+      text: "Es un escritorio hecho de madera de roble",
+      price: 20,
+      isOffer: true,
+      hasStock: false,
+    },
+    {
+      title: "Escritorio de metal",
+      text: "Es un escritorio hecho de metal",
+      price: 100,
+      isOffer: false,
+      hasStock: true,
+    },
+    {
+      title: "Mesa de madera",
+      text: "Es un mesa hecho de madera de roble",
+      price: 50,
+      isOffer: true,
+      hasStock: true,
+    },
+    {
+      title: "Escritorio de oro",
+      text: "Es un escritorio hecho de oro",
+      price: 120,
+      isOffer: false,
+      hasStock: false,
+    },
+  ];
   return (
     <div>
       <Button text="Hola soy un boton" />
@@ -13,6 +42,7 @@ const App = () => {
         text="Es un escritorio hecho de madera de roble"
         price={20}
         isOffer={true}
+        hasStock={false}
       ></Card>
     </div>
   );
