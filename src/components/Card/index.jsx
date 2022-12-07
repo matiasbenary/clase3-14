@@ -4,7 +4,7 @@ const Card = ({ title, text, price, isOffer, hasStock }) => {
   // || cuando es false se muestra
   // && cuando es verdadero se muestra
   return (
-    <div>
+    <div style={{ border: "1px red solid", margin: "10px" }}>
       <h1>
         {title} {hasStock || "Sin stock"}
       </h1>

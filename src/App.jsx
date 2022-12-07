@@ -37,13 +37,18 @@ const App = () => {
       <Button text="Hola soy un boton" />
       <Button text="boton" />
       <Button text="gris" />
-      <Card
-        title="Escritorio de madera"
-        text="Es un escritorio hecho de madera de roble"
-        price={20}
-        isOffer={true}
-        hasStock={false}
-      ></Card>
+      {products.map((product) => {
+        return (
+          <Card
+            key={`card-${product.title}`}
+            title={product.title}
+            text={product.text}
+            price={product.price}
+            isOffer={product.isOffer}
+            hasStock={product.hasStock}
+          />
+        );
+      })}
     </div>
   );
 };
